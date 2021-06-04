@@ -1,0 +1,16 @@
+{
+    "python.pythonPath": "C:\\Users\\Spoorthi Hebbar\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.preferences": {
+    
+    },
+    "emmet.excludeLanguages": [
+
+
+
+        "markdown"
+    ],
+    "files.associations": {"html":"html"},
+   
+}

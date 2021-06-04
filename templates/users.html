@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Users{% endblock title %}
+
+{% block body %}
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Cust.ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Mail</th>
+      <th scope="col">Balance</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+  
+    {% for user in Allusers %}
+    
+    <tr>
+      <th scope="row">{{user.cust_id}}</th>
+      <td><a href="{%url 'transactions' user.cust_id %}">{{user.cust_name}}</a></td>
+      <td>{{user.cust_email}}</td>
+      <td>{{user.balance}}</td>
+    </tr>
+    
+    <a href="" hrkjkjb >
+    {% endfor %}
+    
+  </tbody>
+</table>
+
+
+{% endblock body %}

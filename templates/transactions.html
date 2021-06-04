@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Transaction{% endblock title %}
+{% block body  %}
+{% load crispy_forms_tags %}
+    <div class="jumbotron">
+    <div class="container my-4">
+    <h1> Transaction Portal </h1>
+        <div class="row">
+            <div class="col-md-6">
+            <form method='post' autocomplete='off'>
+                <div class='form-group'>
+                {% csrf_token %}
+                    {{form.sender|as_crispy_field}}
+                    {{form.reciever|as_crispy_field}}
+                    {{form.amount|as_crispy_field}}
+                <button type='submit' class = 'btn btn-primary my-2'>Transfer</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-md-6">
+                <img src="/static/seven.jfif" />
+            </div>
+        </div>
+      </div>
+</div>
+{% endblock body %}
+
+
+
+    
